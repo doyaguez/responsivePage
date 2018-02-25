@@ -1,0 +1,88 @@
+input:invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+
+body{
+    background: grey;
+}
+
+.trj{
+    display: none;
+}
+.registro{
+	float: left;
+	width: 40%;
+	height: 35%;
+	background-color: #DAF7A6;
+	margin-left: 30%;
+
+}
+.login{
+    float: right;
+    background-color: #DAF7A6;
+    text-align: center;
+    width: 92%;
+
+}
+.mostrador{
+	text-align: center;
+	width: 30%;
+	height: auto;
+	margin-left: 30%;
+	background-color: #3e885b;
+
+}
+
+.mostrador button{
+	margin: 10px;
+	text-align: center;
+	width: 50%;
+}
+.menu{
+	background: #333;
+
+}	
+
+
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #119;
+}
+
+.active {
+    background-color: #333;
+    text-align: center;
+    margin-left: 100px;
+}
+
+

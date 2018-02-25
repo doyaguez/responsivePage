@@ -1,0 +1,120 @@
+A:link {text-decoration:none;color:black;}
+
+
+A:visited {text-decoration:none;color:black;}
+
+
+A:active {text-decoration:none;color:black;}
+
+.fondoHeader{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.carro{
+	float: right;
+}
+.login{
+	border:solid black 1px;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background:#129490;
+
+}
+.registro{
+	border:solid black 1px;
+	text-align: center;
+	background:#129490;
+}
+.derecha{
+
+}
+
+
+.pie{
+	background:black;
+	height: 20%;
+	width: 100%;
+}
+
+.foto{
+	
+}
+
+.derecho{
+	color: white;
+
+}
+
+.redes{
+	color:white;
+	float: right;
+}
+.icono{
+	width: 10%;
+	margin-left: 12%;
+
+}
+
+.title-galery{
+	font-family: 'Shrikhand', cursive;
+	text-align: center;
+}
+
+.icoPie{
+	width: 9%;
+	margin-left: 5%;
+	float: right;
+}
+.icons{
+	background:black;
+}
+
+.ue{
+	float: left;
+}
+.line{
+	height: 1%;
+	background:white;
+}
+.info{
+	background:black;
+	color:white;
+}
+
+.muro-iconos{
+	position: absolute;
+	flex-direction: row;
+	margin-top: 24%;
+	float: right;
+}
+@media (max-width: 500px){
+	.ue{
+		display:none;
+	}
+
+	.icoPie{
+		display: none;
+	}
+	.pie{
+		display: none;
+
+	}
+	
+} 
+@media (max-width: 700px){
+	.foto{
+		margin-top: 10%;
+	}
+	.pie{
+		margin-top: 5%;
+	}
+	.carousel{
+		margin-bottom: 10%;
+	}
+
+
+}

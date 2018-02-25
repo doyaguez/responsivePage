@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+	<link rel="stylesheet" type="text/css" href="formulario.css">
+	 <meta charset="UTF-8">
+</head>
+<body>
+	<div class="mostrador">
+		<nav class="menu">
+			<ul>
+			  <li><a id="log" class="active" href="#login">Login</a></li>
+			  <li><a id="reg" class="active" href="#formulario" >Registro</a></li>
+			</ul>
+		</nav>
+		
+		<fieldset class="login">
+			<label>Introduce tu email<br><input  name="u" class="user" type="text" required></label>
+			<label><br>Introduce tu contraseña<br><input name="pass" class="ps" type="password" required></label><br>
+			<button id="botLog" type="submit" onclick="checkCookie()">Entrar</button>
+		</fieldset>
+
+		<fieldset class="registro">
+			<legend>Formulario Registro</legend>
+				<form  method="post" name="form" onsubmit="" accept-charset="utf-8">
+				<label>Introduce tu nombre y apellidos (Obligatorio)<input class="nombreA" type="text" name="nombreAp" required></label><br>
+				<label>Introduce el correo electronico (Obligatorio)<input type="email" name="email" placeholder="ejemplo@ejemplo.com" pattern="[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$"> required></label><br>
+				<label>Introduce la contraseña (Obligatorio)<input class="pass" type="password" name="password"  required></label><br>
+				<label>Confirma la contraseña (Obligatorio)<input class="rePass" type="password" name="rePassword"  required></label><br>
+				<label>Sexo (Opcional)</label><br>
+				<input type="checkbox" name="hombre">Hombre<br>
+				<input type="checkbox" name="mujer">Mujer<br>
+				<label>Introduce fecha de nacimiento (Opcional)<input class="edad" type="date" name="fecha"></label><br>
+				<label>Introduce tu direccion (Opcional)<input class="direccion" type="text" name="direccion"></label><br>
+				<label>Introduce tu pais (Opcional)<!--<input type="text" name="pais" class='pais'></label><br>-->
+					<select class='pais' name="pais" >
+						<option value=""></option>
+						 <option value="España">España</option>
+						 <option value="Alemania">Alemania</option>
+						 <option value="Francia">Francia</option>
+						 <option value="Inglaterra">Inglaterra</option>
+					</select>
+				</label><br>	
+				<div class="trj">
+					<label>Introduce tu numero de tarjeta (Opcional)<input type="text" name="tarjeta"></label><br>
+				</div>
+				<label>Notificacion de novedades<input type="checkbox" value="novedades" ></label><br>
+				<label>Recepcion de la revista digital <input type="checkbox" name="revista" ></label><br>
+				<button id="botReg" type="submit" onclick="setCookie(email.value,password.value)">Enviar</button>
+				</form>
+	    </fieldset>
+	
+		
+	</div>
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="jquery-ui.min.js"></script>
+	<script src="formulario.js"></script>
+	<script type="text/javascript"></script>
+
+	
+</body>
+</html>
